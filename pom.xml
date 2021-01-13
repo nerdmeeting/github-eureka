@@ -132,7 +132,7 @@
 						<version>1.2.2</version>
 						<configuration>
 							<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-							<baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
+							<baseImage>frolvlad/alpine-java:slim</baseImage>
 							<entryPoint>["sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
 							<resources>
 								<resource>
